@@ -1,10 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARNILA</title>
+    <title>ARNILA | Beranda</title>
+
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Material Symbols (Icons) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+
+    <!-- Link ke file CSS yang ada di dalam folder 'css' -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <div class="logo">ARNILA</div>
+      <nav class="nav-links">
+        <a href="#">Beranda</a>
+        <a href="#">Belanja</a>
+        <a href="#">Koleksi Baru</a>
+        <a href="#">Cerita Kami</a>
+      </nav>
+      <div class="nav-icons">
+        <span class="icon-wrapper"
+          ><span class="material-symbols-outlined">search</span> Cari</span
+        >
+        <span class="icon-wrapper"
+          ><span class="material-symbols-outlined">local_mall</span> Tas
+          (0)</span
+        >
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <!-- Bagian Kiri -->
+      <div class="hero-content">
+        <span class="badge-top">Koleksi Kontemporer 2026</span>
+        <h1>Merajut Cerita,<br /><i>Menenun Tradisi.</i></h1>
+        <p>
+          Setiap titik dan garis batik menyimpan filosofi leluhur. Di ARNILA,
+          kami menghidupkan kembali warisan tersebut ke dalam siluet modern yang
+          dinamis dan elegan untuk menemani langkah keseharianmu.
+        </p>
+        <a href="#" class="btn-primary">Jelajahi Koleksi →</a>
+      </div>
+
+      <!-- Bagian Kanan -->
+      <div class="hero-image-wrapper">
+        <!-- Gambar model (path disesuaikan dengan folder-mu) -->
+        <img
+          src="assets/gambar1.jpg"
+          alt="Model Fashion Batik"
+          class="hero-img-arch"
+        />
+        <div class="hero-doodle-2"><span>100% Kain Premium</span></div>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,0 +1,215 @@
+/* SETUP STRUKTUR DASAR CSS (VARIABEL & RESET) */
+:root {
+  /* Palet Warna Gabungan Elegan (Aurora) & Dinamis (Nexa) */
+  --bg-base: #f9f6f0; /* Warm Cream (Background utama) */
+  --primary: #5f7161; /* Sage Green */
+  --secondary: #1e2a38; /* Deep Navy (Untuk teks tebal/tombol) */
+  --accent: #c5a880; /* Muted Gold (Aksen) */
+  --white: #ffffff;
+  --text: #333333;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+/* CSS Reset Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-base);
+  color: var(--text);
+  line-height: 1.6;
+  /* Menambahkan padding biar konten tidak terlalu menempel ke tepi layar di resolusi besar */
+  overflow-x: hidden;
+}
+
+/* Tipografi Dasar */
+h1,
+h2,
+h3,
+h4,
+.logo {
+  font-family: var(--font-serif);
+  color: var(--secondary);
+}
+
+/* MEMBUAT NAVBAR (HEADER)*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: rgba(249, 246, 240, 0.85);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px); /* Efek blur ala web modern */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.nav-icons span {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.nav-icons span:hover {
+  opacity: 0.7;
+}
+
+/* MEMBUAT HERO SECTION (BAGIAN ATAS) */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 80px 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 85vh; /* ini tuh buat mastiin hero section memenuhi layar */
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.badge-top {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.hero h1 i {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #555;
+  max-width: 90%;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(95, 113, 97, 0.2);
+}
+
+/* Desain Visual Hero Kanan (Arch & Pop Art Elements) */
+.hero-image-wrapper {
+  position: relative;
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bentuk melengkung  */
+.hero-img-arch {
+  width: 100%;
+  max-width: 480px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 250px 250px 0 0;
+  border: 12px solid var(--white);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+/* Elemen Pop Art  */
+.hero-doodle {
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(40px);
+}
+
+.hero-doodle-2 {
+  position: absolute;
+  z-index: 3;
+  bottom: 40px;
+  left: -40px;
+  background: var(--white);
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  color: var(--secondary);
+}
