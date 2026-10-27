@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (searchTrigger && searchModal) {
     searchTrigger.addEventListener("click", function (event) {
-      event.preventDefault(); // Mencegah halaman lompat/refresh
-      searchModal.style.setProperty("display", "block", "important"); // PAKSA MODAL MUNCUL
+      event.preventDefault(); 
+      searchModal.style.setProperty("display", "block", "important"); 
       if (searchInputField) {
-        searchInputField.focus(); // Kursor otomatis aktif di kotak ketik
+        searchInputField.focus();
       }
     });
   }
