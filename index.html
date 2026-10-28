@@ -1,10 +1,105 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
+    <!-- ISSUE #1: Setup struktur dasar file HTML & CSS
+         Assignee: Nisa -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARNILA</title>
+    <title>ARNILA | Mahakarya Batik Nusantara</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0"
+      rel="stylesheet"
+    />
+
+    <!-- Link ke file CSS Terpisah -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- ISSUE #2: Membuat Navbar & Hero Section
+         Assignee: Nisa -->
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+      &larr; Pengiriman Gratis untuk pesanan di atas Rp 750.000 &rarr;
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+      <div class="logo">ARNILA</div>
+
+      <nav class="nav-center">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#koleksi">Koleksi</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="javascript:void(0)" id="search-trigger">
+          <span class="material-symbols-outlined">search</span>
+        </a>
+
+        <a href="javascript:void(0)" id="account-trigger">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+
+        <a href="#wishlist-section">
+          <span class="material-symbols-outlined">favorite</span>
+        </a>
+
+        <a href="#javascript:void(0)" id="cart-trigger">
+          <span class="material-symbols-outlined">shopping_bag</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- POPUP ACCOUNT -->
+    <div id="account-modal" class="search-modal">
+      <div class="search-modal-content">
+        <span class="close-search" id="close-account">&times;</span>
+        <h3>Masuk Akun Arnila</h3>
+
+        <div class="modal-form-wrapper">
+          <input type="email" placeholder="Email" class="modal-input" />
+          <input type="password" placeholder="Password" class="modal-input" />
+          <button class="modal-btn-submit">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP KERANJANG -->
+    <div id="cart-modal" class="search-modal">
+      <div class="search-modal-content">
+        <span class="close-search" id="close-cart">&times;</span>
+        <h3>Keranjang Belanja</h3>
+        <p class="cart-empty-text">Belum ada produk di keranjang.</p>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-subtitle">EDISI EKSKLUSIF</span>
+        <h1 class="hero-title">Pesona<br />Nusantara</h1>
+        <p class="hero-text">
+          Mahakarya busana etnik untuk keanggunan gaya modern
+        </p>
+        <a href="#" class="btn">Belanja Sekarang</a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
