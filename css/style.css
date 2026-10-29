@@ -573,6 +573,259 @@ h5,
   color: var(--color-dark-muted);
 }
 
+/* 
+   ISSUE #5: Membuat Contact & Footer Section
+   Assignee: Ardel
+    */
+.testimonials-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  background-color: var(--color-white);
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-stars {
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+
+.review-stars .material-symbols-outlined {
+  font-size: 16px;
+  font-variation-settings: "FILL" 1;
+}
+
+.review-text {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--color-dark-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.community-banner {
+  background-color: var(--color-surface);
+  border-radius: 50px;
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 0 40px 0;
+}
+
+.community-text {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 50%;
+}
+
+.community-text .icon-wrap {
+  background-color: var(--color-white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.community-mail-icon {
+  font-size: 28px;
+  color: var(--color-dark);
+}
+
+.community-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.community-desc {
+  color: var(--color-dark-muted);
+  font-size: 13px;
+}
+
+.community-btn-icon {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.community-form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.community-form input {
+  flex-grow: 1;
+  padding: 14px 24px;
+  border: 1px solid rgba(44, 30, 22, 0.2);
+  border-radius: 30px;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-dark);
+  outline: none;
+}
+
+.community-form input::placeholder {
+  color: var(--color-dark-muted);
+}
+
+.community-form button {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  border: none;
+  border-radius: 30px;
+  padding: 0 30px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.community-form button:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(44, 30, 22, 0.1);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  font-size: 32px;
+}
+
+.footer-logo-area p {
+  font-size: 13px;
+  color: var(--color-dark-muted);
+  margin-top: 16px;
+  margin-bottom: 24px;
+  max-width: 250px;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links a {
+  color: var(--color-dark);
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--color-accent);
+}
+
+.footer-col h4 {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col ul li a {
+  font-size: 13px;
+  color: var(--color-dark-muted);
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--color-dark);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(44, 30, 22, 0.1);
+  font-size: 12px;
+  color: var(--color-dark-muted);
+}
+
+.payment-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.verified-icon {
+  color: var(--color-dark);
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.payment-icons-group {
+  margin-left: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.payment-icons span.material-symbols-outlined {
+  font-size: 20px;
+  color: var(--color-dark-muted);
+}
 
 /* Responsiveness */
 @media (max-width: 1024px) {
