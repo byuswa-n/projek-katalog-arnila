@@ -494,8 +494,84 @@ h5,
   color: white;
 }
 
+/*ISSUE #4: Membuat About/Profile Section Assignee: Ara*/
+.lifestyle-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 40px;
+}
 
+.lifestyle-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
 
+.lifestyle-content {
+  padding-left: 20px;
+}
+
+.lifestyle-desc{
+  color: var(--color-dark-muted);
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(44, 30, 22, 0.1);
+  padding-top: 30px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.material-symbols-outlined {
+  font-size: 16px;
+}
+
+.feature-item .material-symbols-outlined {
+  font-size: 28px;
+  color: var(--color-dark);
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 60px;
+  border-top: 1px solid rgba(44, 30, 22, 0.1);
+  border-bottom: 1px solid rgba(44, 30, 22, 0.1);
+}
+
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-dark-muted);
+}
 
 /* Responsiveness */
 @media (max-width: 1024px) {
